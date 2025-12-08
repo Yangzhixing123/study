@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        [title="rai"] {
+            color: red;
+        }
+        [title^="s"] {
+            color: blue;
+        }
+        [title$="n"] {
+            color: green;
+        }
+        [title*="l"] {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div title="qingtian">晴天</div>
+    <div title="rai">雨天</div>
+    <div title="snow">雪天</div>
+    <div title="hail">冰雹</div>
+</body>
+</html>

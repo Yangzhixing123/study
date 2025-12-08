@@ -1,0 +1,38 @@
+h1{
+    color: red;
+    font-size: 40px;
+}
+
+#sun{
+    color: yellow;
+    font-size: 30px;
+}
+
+#css{
+    color: pink;
+    font-size: 30px;
+    text-align: center;
+}
+
+.class{
+    color: red;
+    font-size: 30px;
+    text-align: right;
+}
+
+.happy{
+    color: rgb(10, 24, 10);
+    font-size: 30px;
+}
+
+div.class{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: blueviolet;
+}
