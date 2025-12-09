@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>动态伪类--后来者居上</title>
+    <style>
+        /* 悬浮状态的颜色 */
+        a:link {
+            color: orange;
+        } 
+        a:visited {
+            color: red;
+        }        
+        a:hover {
+            color: orange;
+        }
+        a:active,select:active {
+            color: red;
+        }
+        input:focus,input:focus,select:focus {
+            color: green;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">点我跳转百度</a>
+    <a href="https://www.jd.com">点我跳转京东</a><br>
+    <input type="text">
+    <input type="radio" name="sex">男生
+    <select name="sex">
+        <option value="male">男</option>
+        <option value="female">女</option>
+    </select>
+    
+    <input type="radio" name="sex">女生
+</body>
+</html>
