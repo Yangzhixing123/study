@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>伪类选择器-否定伪类</title>
+    <style>
+        /* div>p:not(.fail){
+            color: green;
+        } */
+        div>p:not(:first-child){
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>张三：98</p>
+        <p>李四：90</p>
+        <p>王五：85</p>
+        <p>赵六：88</p>
+        <p class="fail">说的：55</p>
+        
+    </div>
+</body>
+</html>

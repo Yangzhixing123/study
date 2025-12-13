@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>伪类选择器-目标伪类</title>
+    <style>
+        div::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+        div::first-line {
+            font-size: 20px;
+            color: blue;
+        }
+        div::selection {
+            background-color: rgb(61, 206, 35);
+            color: rgb(226, 136, 140);
+        }
+        input::placeholder {
+            color: greenyellow;
+            font-size: 14px;
+        }
+        p::before {
+            content: "成绩：";
+            color: orange;
+        }
+        p::after {
+            content: "分";
+            color: orange;
+        }
+
+        p{
+            font-size: 24px;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum adipisci ipsa, suscipit minus harum dolore? Ad molestias tenetur, facere dignissimos a voluptate quidem veritatis atque enim? Molestiae, tempore vitae repellendus nobis blanditiis porro aliquam, cum necessitatibus, tenetur minima dolorum.</div>
+    <input type="text" placeholder="请输入名字">
+    <p>199</p>
+    <p>200</p>
+</body>
+</html>
