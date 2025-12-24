@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button>切换1</button>
+    <button>切换2</button>
+    <button>切换3</button>
+    <button>切换4</button>
+    <script>
+        let btns = document.querySelectorAll('button');
+        for(let i=0;i<btns.length;i++){
+            btns[i].addEventListener('click',function(){
+                for(let j=0;j<btns.length;j++){
+                    btns[j].classList.remove('red');
+                }
+                this.classList.add('red');
+            })
+        }
+    </script>
+</body>
+</html>  
